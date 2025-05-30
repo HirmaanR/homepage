@@ -87,18 +87,6 @@ const Navbar = () => {
             </li>
             <li>
               <Link
-                href="/posts"
-                className={
-                  route === "/posts"
-                    ? "rounded-lg font-medium bg-accent text-base-300"
-                    : "rounded-lg font-medium"
-                }
-              >
-                Posts
-              </Link>
-            </li>
-            <li>
-              <Link
                 href="/dev"
                 className={
                   route === "/dev"
