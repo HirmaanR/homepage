@@ -19,7 +19,7 @@ const Project = ({ params }) => {
     <div className="grid justify-center">
       <MotionSection>
         <div className="m-22"></div>
-        <div className="breadcrumbs text-sm">
+        <div className="breadcrumbs text-sm m-2">
           <ul>
             <li>
               <Link href="/projects" className="text-sm">
@@ -31,7 +31,7 @@ const Project = ({ params }) => {
             </li>
           </ul>
         </div>
-        <div className="flex flex-row items-center">
+        <div className="flex flex-row items-center m-2">
           <h1 className="font-bold text-2xl capitalize lg:text-4xl">
             {prj.name}
           </h1>
