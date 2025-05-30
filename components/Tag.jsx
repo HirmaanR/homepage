@@ -5,7 +5,7 @@ const Tag = ({ title, des }) => {
         <div className="badge badge-secondary rounded-sm uppercase badge-sm lg:badge-md font-bold">
           {title}
         </div>
-        <p className="m-1 text-sm font-light">{des}</p>
+        <p className="m-1 font-light text-sm ">{des}</p>
       </div>
     </>
   );
