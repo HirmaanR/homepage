@@ -52,7 +52,7 @@ const Navbar = () => {
           <div
             tabIndex={0}
             role="button"
-            className="btn btn-sm rounded-lg lg:hidden bg-base-100 border-none"
+            className="btn btn-xs sm:btn-sm rounded-lg lg:hidden bg-base-100 border-none"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"

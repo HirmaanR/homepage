@@ -14,7 +14,7 @@ const Projects = () => {
     return (
       <ListItem
         key={item.id}
-        id={item.id}
+        slug={item.slug}
         title={item.name}
         des={item.des}
         img={item.img.at(0)}

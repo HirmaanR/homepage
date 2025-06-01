@@ -14,7 +14,7 @@ const ThemeToggle = () => {
   };
 
   return (
-    <div className="btn btn-primary rounded-lg btn-sm mx-1 py-5">
+    <div className="btn btn-primary rounded-lg btn-xs mx-1 py-4 sm:btn-sm sm:py-5">
       <label className="swap swap-rotate">
         <input
           type="checkbox"

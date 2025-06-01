@@ -3,17 +3,18 @@ import Image from "next/image";
 
 import Tag from "../../../components/Tag";
 import MotionSection from "../../../components/MotionSection";
-import { data } from "../../data";
+import { GetProjectBySlug } from "../../data";
+import ImageModalDemo from "@/components/ImageModal";
 
 export async function generateMetadata({ params }) {
   return {
     title: "Projects Detail",
     description: "Hirmaan Rashidi Portfolio | Projects Detail",
-  }
+  };
 }
 
 const Project = ({ params }) => {
-  let prj = data[params.slug - 1];
+  const prj = GetProjectBySlug(params.slug);
 
   return (
     <div className="grid justify-center">
@@ -36,7 +37,7 @@ const Project = ({ params }) => {
             {prj.name}
           </h1>
         </div>
-        <p className="m-2 text-sm max-w-96">{prj.des}</p>
+        <p className="m-2 text-sm max-w-96 indent-8">{prj.des}</p>
         <div className="divider"></div>
         <div>
           <Tag
@@ -53,16 +54,7 @@ const Project = ({ params }) => {
         <div className="divider"></div>
         <div className="grid grid-cols-1 place-items-center gap-4 lg:gap-y-4 justify-around lg:grid-cols-2">
           {prj.img.map((image, index) => {
-            return (
-              <Image
-                key={index}
-                src={image}
-                width={400}
-                height={400}
-                alt="project picture"
-                className="rounded-lg m-3 cursor-pointer"
-              />
-            );
+            return <ImageModalDemo key={index} src={image} alt={"project image"} />;
           })}
         </div>
       </MotionSection>

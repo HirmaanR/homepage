@@ -1,9 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
 
-const ListItem = ({ id, title, des, img }) => {
+const ListItem = ({ slug, title, des, img }) => {
   return (
-    <div className="card bg-base-200 w-96 shadow-md rounded-lg">
+    <div className="card bg-base-200 w-80 sm:w-96 shadow-md rounded-lg">
       <figure>
         <Image src={img} width={500} height={500} alt="project picture" />
       </figure>
@@ -12,7 +12,7 @@ const ListItem = ({ id, title, des, img }) => {
         <p>{des}</p>
         <div className="card-actions justify-center">
           <Link
-            href={"projects/" + id}
+            href={"projects/" + slug}
             className="btn btn-soft btn-wide btn-secondary rounded-lg"
           >
             Detail
