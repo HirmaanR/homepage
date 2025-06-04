@@ -1,10 +1,7 @@
-import Card from "../components/Card";
 import Bubble from "../components/Bubble";
 
-import { DiGithubBadge, DiMsqlServer, DiJqueryLogo } from "react-icons/di";
-import { IconContext } from "react-icons";
+import { DiMsqlServer, DiJqueryLogo } from "react-icons/di";
 import {
-  FaArrowRight,
   FaGitAlt,
   FaReact,
   FaJs,
@@ -104,7 +101,6 @@ const AditionalSkils = () => {
       <Bubble>Clean Code</Bubble>
       <Bubble>Django Rest FrameWork (DRF)</Bubble>
       <Bubble>Rest API</Bubble>
-      <Bubble>MVC Microservices</Bubble>
     </div>
   );
 };

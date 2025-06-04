@@ -1,8 +1,9 @@
 // get profile data from leetcode
 // NOTE : call function should in await
 // NOTE : this api has limit
+const url = "https://alfa-leetcode-api.onrender.com/userProfile/HirmanR";
+
 async function getData() {
-  const url = "https://alfa-leetcode-api.onrender.com/userProfile/HirmanR";
   try {
     const response = await fetch(url);
     if (!response.ok) {
@@ -14,4 +15,5 @@ async function getData() {
     console.log(error.message);
   }
 }
-export default getData;
+
+export { getData };

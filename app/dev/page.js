@@ -3,7 +3,7 @@ import Dashbord from "../../components/Dashbord";
 import Git from "../../components/Githubcalender";
 import Card from "../../components/Card";
 
-import getData from "./data";
+import { getData } from "./data";
 
 export async function generateMetadata({ params }) {
   return {
@@ -13,6 +13,7 @@ export async function generateMetadata({ params }) {
 }
 
 export default async function Dev() {
+
   const data = await getData();
   return (
     <div>
