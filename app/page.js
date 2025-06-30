@@ -8,7 +8,7 @@ import Link from "next/link";
 
 import { FaArrowRight } from "react-icons/fa";
 import { DiGithubBadge } from "react-icons/di";
-import { FaXTwitter } from "react-icons/fa6";
+import { FaXTwitter, FaLinkedin } from "react-icons/fa6";
 
 export default function Home() {
   return (
@@ -46,6 +46,9 @@ export default function Home() {
               </Bubble>
               <Bubble title="HirmaanR" url="https://x.com/HirmaanR">
                 <FaXTwitter className="text-lg" />
+              </Bubble>
+              <Bubble title="Hirmaan Rashidi" url="https://www.linkedin.com/in/hirmaan-rashidi-70620736b/">
+                <FaLinkedin className="text-xl" />
               </Bubble>
             </div>
           </Card>
